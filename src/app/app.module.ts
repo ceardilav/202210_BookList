@@ -8,17 +8,15 @@ import { BookModule } from './book/book.module';
 import { EditorialModule } from './editorial/editorial.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
+    HttpClientModule,
     BookModule,
     EditorialModule,
-    HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
